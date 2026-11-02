@@ -1,8 +1,13 @@
 import React from 'react'
+import HomePage from './Home/page'
+import Navbar from '@/MainLayout/Navbar'
 
 function GuestPage() {
   return (
-    <div>GuestPage</div>
+    <div>
+      <Navbar/>
+      <HomePage/>
+    </div>
   )
 }
 

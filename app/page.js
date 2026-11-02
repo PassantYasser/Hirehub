@@ -1,9 +1,9 @@
-import Image from "next/image";
+import GuestPage from "@/pages/Guest/page";
 
 export default function Home() {
   return (
     <>
-    home
+    <GuestPage/>
     </>
   );
 }
