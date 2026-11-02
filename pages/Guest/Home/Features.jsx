@@ -1,86 +1,7 @@
 
+import { jobs } from "@/data/Guest/Features";
 import React from "react";
 
-const jobs = [
-  {
-    id: 1,
-    title: "Front-end Developer",
-    company: "Google",
-    logo: "G",
-    location: "Giza",
-    type: "Hybrid",
-    employment: "Full-time",
-    minSalary: 1200,
-    maxSalary: 2000,
-    skills: ["React", "JavaScript", "Tailwind"],
-    posted: "3 days ago",
-  },
-  {
-    id: 2,
-    title: "React Developer",
-    company: "Microsoft",
-    logo: "M",
-    location: "Cairo",
-    type: "Remote",
-    employment: "Full-time",
-    minSalary: 1500,
-    maxSalary: 2500,
-    skills: ["React", "Redux", "Next.js"],
-    posted: "2 days ago",
-  },
-  {
-    id: 3,
-    title: "UI Developer",
-    company: "Amazon",
-    logo: "A",
-    location: "Giza",
-    type: "On-site",
-    employment: "Part-time",
-    minSalary: 1000,
-    maxSalary: 1800,
-    skills: ["HTML", "CSS", "JavaScript"],
-    posted: "1 day ago",
-  },
-  {
-    id: 4,
-    title: "Next.js Developer",
-    company: "Meta",
-    logo: "M",
-    location: "Remote",
-    type: "Remote",
-    employment: "Full-time",
-    minSalary: 1800,
-    maxSalary: 3000,
-    skills: ["Next.js", "React", "TypeScript"],
-    posted: "5 days ago",
-  },
-  {
-    id: 5,
-    title: "Full Stack Developer",
-    company: "Netflix",
-    logo: "N",
-    location: "Cairo",
-    type: "Hybrid",
-    employment: "Full-time",
-    minSalary: 2000,
-    maxSalary: 3500,
-    skills: ["React", "Node.js", "MongoDB"],
-    posted: "4 days ago",
-  },
-  {
-    id: 6,
-    title: "Frontend Engineer",
-    company: "Adobe",
-    logo: "A",
-    location: "Giza",
-    type: "On-site",
-    employment: "Full-time",
-    minSalary: 1600,
-    maxSalary: 2800,
-    skills: ["JavaScript", "React", "CSS"],
-    posted: "Today",
-  },
-];
 
 function Features() {
   return (
@@ -100,7 +21,7 @@ function Features() {
       {/* Job Cards */}
       <div className="grid grid-cols-3 gap-4 mt-6">
 
-        {jobs.map((job) => (
+        {jobs.slice(0, 3).map((job) => (
           <div
             key={job.id}
             className="bg-[#EEF2FF] p-5 rounded-xl transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
